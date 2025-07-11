@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Klajdi Bakiri | Portfolio</title>
@@ -9,7 +9,6 @@
     rel="stylesheet"
   />
   <style>
-    /* Fade-in animation */
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -26,6 +25,7 @@
   </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header -->
   <header
     class="text-center py-12 bg-gradient-to-r from-purple-600 via-indigo-700 to-blue-700 shadow-lg text-white"
   >
@@ -35,7 +35,9 @@
     <p class="text-xl font-light tracking-wide">Interactive VR Developer</p>
   </header>
 
+  <!-- Main Content -->
   <main class="max-w-5xl mx-auto px-6 py-16 space-y-20">
+
     <!-- VR Project Section -->
     <section
       class="bg-white p-8 rounded-xl shadow-lg fade-in-up"
@@ -95,38 +97,65 @@
       </div>
     </section>
 
-    <!-- Media Production Section -->
+    <!-- Rectasonic Project Section -->
     <section
       class="bg-white p-8 rounded-xl shadow-lg fade-in-up"
       style="animation-delay: 0.3s"
     >
       <h2 class="text-4xl font-bold mb-8 border-b-4 border-indigo-600 inline-block pb-2">
-        Media Production
+        Rectasonic
       </h2>
 
       <p class="mb-8 text-lg leading-relaxed text-gray-700 max-w-3xl">
-        A showcase of my media production work including video editing, sound
-        design, and short film projects.
+        <strong>Rectasonic</strong> is an interactive browser-based audiovisual experience developed using HTML, CSS, and JavaScript. It explores dynamic user interaction with synchronized sound and visuals, designed to feel responsive and immersive.
       </p>
 
+      <!-- Demo Video -->
       <div
-        class="mb-8 rounded-lg overflow-hidden shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        class="mb-10 rounded-lg overflow-hidden shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl"
       >
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/LORezykIKeM?si=Au_2Im1jgB4KYMvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe
+          width="100%"
+          height="405"
+          src="https://www.youtube.com/embed/LORezykIKeM?si=Au_2Im1jgB4KYMvt"
+          title="Rectasonic Demo Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
 
-
+      <!-- Live CodeSandbox Embed -->
+      <div
+        class="mb-10 rounded-lg overflow-hidden shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+      >
+        <iframe
+          src="https://codesandbox.io/embed/jpqxzj?view=editor+%2B+preview&module=%2Findex.html"
+          style="width: 100%; height: 500px; border: 0; border-radius: 8px; overflow: hidden;"
+          title="Rectasonic Live Experience"
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        ></iframe>
       </div>
 
       <p class="text-gray-700 text-lg leading-relaxed max-w-3xl">
-        This video highlights some of my recent media production projects,
-        focusing on creative storytelling and technical post-production
-        skills.
+        The demo above gives an overview of the project’s design intent, while the embedded sandbox allows users to interact with Rectasonic in real-time. This project blends visual rhythm and user input for a playful interactive experience.
       </p>
+
+      <a
+        href="https://codesandbox.io/s/jpqxzj"
+        target="_blank"
+        class="inline-block mt-6 bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold tracking-wide shadow-md hover:bg-indigo-700 transition"
+        >Open Fullscreen in CodeSandbox</a
+      >
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="text-center py-8 text-gray-500 font-light text-sm">
     &copy; 2025 Klajdi Bakiri. All rights reserved.
   </footer>
 </body>
 </html>
+
