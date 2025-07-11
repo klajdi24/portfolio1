@@ -1,41 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <title>Klajdi Bakiri | VR Room Project</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Klajdi Bakiri | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* Fade-in animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <header class="text-center py-10 bg-white shadow">
-    <h1 class="text-4xl font-bold">Klajdi Bakiri</h1>
-    <p class="text-lg text-gray-600">Interactive VR Developer</p>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <header
+    class="text-center py-12 bg-gradient-to-r from-purple-600 via-indigo-700 to-blue-700 shadow-lg text-white"
+  >
+    <h1 class="text-5xl font-extrabold mb-2 tracking-wide drop-shadow-md">
+      Klajdi Bakiri
+    </h1>
+    <p class="text-xl font-light tracking-wide">Interactive VR Developer</p>
   </header>
 
-  <main class="max-w-4xl mx-auto px-6 py-10">
-    <section class="bg-white p-6 rounded shadow">
-      <h2 class="text-2xl font-semibold mb-4">VR Room Project</h2>
-      <p class="mb-4 text-gray-700">
-        A virtual reality room environment built with Unity and XR Interaction Toolkit. This project demonstrates interactive object handling, immersive room setup, and basic VR mechanics using Unity and C#.
+  <main class="max-w-5xl mx-auto px-6 py-16 space-y-20">
+    <!-- VR Project Section -->
+    <section
+      class="bg-white p-8 rounded-xl shadow-lg fade-in-up"
+      style="animation-delay: 0.1s"
+    >
+      <h2 class="text-4xl font-bold mb-8 border-b-4 border-purple-600 inline-block pb-2">
+        VR Project
+      </h2>
+
+      <p class="mb-8 text-lg leading-relaxed text-gray-700 max-w-3xl">
+        A virtual reality room environment built with Unity and XR Interaction Toolkit.
+        This project demonstrates interactive object handling, immersive room setup,
+        and basic VR mechanics using Unity and C#.
       </p>
 
-      <div class="flex flex-col sm:flex-row sm:space-x-4">
-        <img src="preview.png" alt="VR Room Preview" class="rounded w-full sm:w-1/2 mb-4 sm:mb-0">
-        <div class="space-y-3">
-          <a href="https://github.com/klajdi24/VR-Room-Project" target="_blank"
-             class="inline-block bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-800">
-            View Code on GitHub
-          </a>
-          <a href="WebGL/index.html" target="_blank"
-             class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">
-            Play Project (WebGL)
-          </a>
+      <!-- Video Demo -->
+      <div
+        class="mb-10 rounded-lg overflow-hidden shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+      >
+        <video
+          controls
+          class="w-full"
+          src="videos/vr-demo.mp4"
+          poster="images/vr-demo-poster.png"
+        >
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Images and Text side by side -->
+      <div class="flex flex-col sm:flex-row sm:space-x-10 items-center">
+        <img
+          src="images/vr-screenshot1.png"
+          alt="VR Screenshot 1"
+          class="rounded-xl shadow-lg mb-6 sm:mb-0 sm:w-1/2 object-cover cursor-pointer transition transform hover:scale-105 hover:shadow-2xl"
+        />
+        <div class="sm:w-1/2 space-y-6 text-gray-700 text-lg leading-relaxed">
+          <p>
+            This screenshot shows the interactive room setup with multiple
+            grab-and-move objects for user interaction.
+          </p>
+          <p>
+            The project focuses on smooth user experience in VR using Unity’s
+            XR Interaction Toolkit and custom scripts for object interaction.
+          </p>
+          <p>
+            GitHub repo available for deeper insight into the implementation
+            details.
+          </p>
+          <a
+            href="https://github.com/klajdi24/VR-Room-Project"
+            target="_blank"
+            class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold tracking-wide shadow-md hover:bg-purple-700 transition"
+            >View Code on GitHub</a
+          >
         </div>
       </div>
     </section>
+
+    <!-- Media Production Section -->
+    <section
+      class="bg-white p-8 rounded-xl shadow-lg fade-in-up"
+      style="animation-delay: 0.3s"
+    >
+      <h2 class="text-4xl font-bold mb-8 border-b-4 border-indigo-600 inline-block pb-2">
+        Media Production
+      </h2>
+
+      <p class="mb-8 text-lg leading-relaxed text-gray-700 max-w-3xl">
+        A showcase of my media production work including video editing, sound
+        design, and short film projects.
+      </p>
+
+      <div
+        class="mb-8 rounded-lg overflow-hidden shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+      >
+        <video
+          controls
+          class="w-full"
+          src="videos/media-production-demo.mp4"
+          poster="images/media-production-poster.png"
+        >
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <p class="text-gray-700 text-lg leading-relaxed max-w-3xl">
+        This video highlights some of my recent media production projects,
+        focusing on creative storytelling and technical post-production
+        skills.
+      </p>
+    </section>
   </main>
 
-  <footer class="text-center py-6 text-gray-500">
+  <footer class="text-center py-8 text-gray-500 font-light text-sm">
     &copy; 2025 Klajdi Bakiri. All rights reserved.
   </footer>
 </body>
